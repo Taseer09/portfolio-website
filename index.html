@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Alex Chen – AI Engineer crafting intelligent systems at the intersection of science and design." />
+  <title>Taseer Mehboob — AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ░░ NOISE OVERLAY ░░ -->
+  <div class="noise"></div>
+
+  <!-- ░░ CURSOR ░░ -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ░░ LOADER ░░ -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-count" id="loader-count">0</div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loader-bar"></div>
+      </div>
+      <div class="loader-label">Initializing AI Systems</div>
+    </div>
+  </div>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="#" class="nav-logo">TM<span>.</span></a>
+      <div class="nav-status">
+        <span class="status-ping"></span>
+        <span>Open to Work</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="nav-menu-btn" id="menu-btn" aria-label="menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="#work" class="mm-link">Work</a>
+      <a href="#about" class="mm-link">About</a>
+      <a href="#stack" class="mm-link">Stack</a>
+      <a href="#contact" class="mm-link">Contact</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ░░░░░░░░░░ HERO ░░░░░░░░░░ -->
+    <section class="hero" id="home">
+      <div class="hero-eyebrow">
+        <span>AI Engineer</span>
+        <span class="dot">·</span>
+        <span>Pakistan</span>
+        <span class="dot">·</span>
+        <span>2026</span>
+      </div>
+
+      <h1 class="hero-headline">
+        <span class="line" data-text="Building">Building</span>
+        <span class="line italic" data-text="intelligence">intelligence</span>
+        <span class="line" data-text="by design.">by design.</span>
+      </h1>
+
+      <div class="hero-bottom">
+        <p class="hero-desc">
+          I architect AI systems that think, learn, and adapt —
+          from fine-tuned LLMs to real-time computer vision pipelines.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#work" class="cta-primary">See my work ↓</a>
+          <a href="#contact" class="cta-ghost">Let's talk →</a>
+        </div>
+      </div>
+
+      <!-- Marquee -->
+      <div class="marquee-wrap">
+        <div class="marquee-track">
+          <span>PyTorch</span><span class="sep">✦</span>
+          <span>LangChain</span><span class="sep">✦</span>
+          <span>LLMs</span><span class="sep">✦</span>
+          <span>RAG Systems</span><span class="sep">✦</span>
+          <span>MLOps</span><span class="sep">✦</span>
+          <span>Generative AI</span><span class="sep">✦</span>
+          <span>HuggingFace</span><span class="sep">✦</span>
+          <span>Computer Vision</span><span class="sep">✦</span>
+          <span>AWS SageMaker</span><span class="sep">✦</span>
+          <span>Transformers</span><span class="sep">✦</span>
+          <span>PyTorch</span><span class="sep">✦</span>
+          <span>LangChain</span><span class="sep">✦</span>
+          <span>LLMs</span><span class="sep">✦</span>
+          <span>RAG Systems</span><span class="sep">✦</span>
+          <span>MLOps</span><span class="sep">✦</span>
+          <span>Generative AI</span><span class="sep">✦</span>
+          <span>HuggingFace</span><span class="sep">✦</span>
+          <span>Computer Vision</span><span class="sep">✦</span>
+          <span>AWS SageMaker</span><span class="sep">✦</span>
+          <span>Transformers</span><span class="sep">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░░░░░░░░ BENTO STATS + ABOUT ░░░░░░░░░░ -->
+    <section class="bento-section" id="about">
+      <div class="bento-grid">
+
+        <!-- Big stat -->
+        <div class="bento-cell cell-stat-1 tilt-card">
+          <div class="cell-inner">
+            <span class="big-num">50<sup>+</sup></span>
+            <span class="big-label">AI Projects shipped</span>
+            <div class="cell-tag">Since 2019</div>
+          </div>
+        </div>
+
+        <!-- About text -->
+        <div class="bento-cell cell-about tilt-card">
+          <div class="cell-inner">
+            <span class="cell-eyebrow">About me</span>
+            <h2>I make machines that understand the&nbsp;world.</h2>
+            <p>
+              5 years building ML systems at Google DeepMind, Stripe and beyond.
+              My obsession: making AI feel less like a tool and more like a collaborator.
+            </p>
+          </div>
+        </div>
+
+        <!-- Profile photo -->
+        <div class="bento-cell cell-photo tilt-card">
+          <img src="profile.jpeg" alt="Taseer Mehboob" id="bento-photo"
+            onerror="this.style.display='none'; document.getElementById('bento-avatar').style.display='flex';" />
+          <div class="bento-avatar" id="bento-avatar">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="88" r="50" fill="#b45309" />
+              <ellipse cx="100" cy="180" rx="70" ry="42" fill="#b45309" />
+            </svg>
+          </div>
+          <div class="photo-badge">BS AI CUSIT</div>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="bento-cell cell-stat-2 tilt-card">
+          <div class="cell-inner">
+            <span class="big-num">2×</span>
+            <span class="big-label">NeurIPS Author</span>
+            <div class="cell-tag">2021 & 2022</div>
+          </div>
+        </div>
+
+        <!-- Disciplines -->
+        <div class="bento-cell cell-disciplines tilt-card">
+          <div class="cell-inner">
+            <span class="cell-eyebrow">Disciplines</span>
+            <ul class="discipline-list">
+              <li><span class="disc-num">01</span><span>Large Language Models</span></li>
+              <li><span class="disc-num">02</span><span>Computer Vision</span></li>
+              <li><span class="disc-num">03</span><span>Generative AI</span></li>
+              <li><span class="disc-num">04</span><span>MLOps & Infrastructure</span></li>
+              <li><span class="disc-num">05</span><span>Reinforcement Learning</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="bento-cell cell-stat-3 tilt-card">
+          <div class="cell-inner">
+            <span class="big-num">99.2<sup>%</sup></span>
+            <span class="big-label">Model accuracy (best)</span>
+            <div class="cell-tag">Fraud detection</div>
+          </div>
+        </div>
+
+        <!-- Currently -->
+        <div class="bento-cell cell-current tilt-card">
+          <div class="cell-inner">
+            <span class="cell-eyebrow">Currently</span>
+            <div class="current-role">
+              <div class="current-dot"></div>
+              <div>
+                <strong>Senior AI Engineer</strong>
+                <span>@ OpenAI Partners</span>
+              </div>
+            </div>
+            <p>Building RAG pipelines serving<br />500K+ daily users.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ░░░░░░░░░░ PROJECTS ░░░░░░░░░░ -->
+    <section class="projects-section" id="work">
+      <div class="projects-header">
+        <div class="projects-label">Selected Work</div>
+        <h2 class="projects-title">Projects that<br /><em>ship and scale.</em></h2>
+      </div>
+
+      <!-- Split-screen layout: left = titles, right = preview panel -->
+      <div class="projects-split">
+
+        <!-- LEFT: hoverable title list -->
+        <div class="ps-left">
+          <div class="ps-item active" data-project="0">
+            <span class="ps-num">01</span>
+            <span class="ps-title">Enterprise RAG Chatbot</span>
+            <span class="ps-arrow">→</span>
+          </div>
+          <div class="ps-item" data-project="1">
+            <span class="ps-num">02</span>
+            <span class="ps-title">Object Detection API</span>
+            <span class="ps-arrow">→</span>
+          </div>
+          <div class="ps-item" data-project="2">
+            <span class="ps-num">03</span>
+            <span class="ps-title">Sentiment Engine</span>
+            <span class="ps-arrow">→</span>
+          </div>
+          <div class="ps-item" data-project="3">
+            <span class="ps-num">04</span>
+            <span class="ps-title">AI Art Studio</span>
+            <span class="ps-arrow">→</span>
+          </div>
+          <div class="ps-item" data-project="4">
+            <span class="ps-num">05</span>
+            <span class="ps-title">AutoML Platform</span>
+            <span class="ps-arrow">→</span>
+          </div>
+
+          <!-- Progress bar -->
+          <div class="ps-progress-wrap">
+            <div class="ps-progress-bar" id="ps-progress"></div>
+          </div>
+        </div>
+
+        <!-- RIGHT: detail panel -->
+        <div class="ps-right">
+          <div class="ps-panel active" data-panel="0">
+            <div class="ps-panel-bg p1"></div>
+            <div class="ps-panel-body">
+              <h3>Enterprise RAG Chatbot</h3>
+              <p>A production-grade Retrieval-Augmented Generation system powering internal knowledge search for
+                enterprise teams. GPT-4 + Pinecone vector DB, serving 500K+ queries daily with sub-200ms latency.</p>
+              <div class="ps-tags">
+                <span>LangChain</span><span>Pinecone</span><span>FastAPI</span><span>AWS</span><span>GPT-4</span>
+              </div>
+              <div class="ps-panel-links">
+                <a href="#" class="ps-link-primary">View Live ↗</a>
+                <a href="#" class="ps-link-ghost">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ps-panel" data-panel="1">
+            <div class="ps-panel-bg p2"></div>
+            <div class="ps-panel-body">
+              <h3>Real-Time Object Detection API</h3>
+              <p>Custom-trained YOLOv8 model hitting 60 FPS on edge hardware. Zero-latency REST API with batch inference
+                support — used in smart retail and industrial safety monitoring at scale.</p>
+              <div class="ps-tags">
+                <span>PyTorch</span><span>YOLOv8</span><span>FastAPI</span><span>Docker</span>
+              </div>
+              <div class="ps-panel-links">
+                <a href="#" class="ps-link-primary">View Live ↗</a>
+                <a href="#" class="ps-link-ghost">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ps-panel" data-panel="2">
+            <div class="ps-panel-bg p3"></div>
+            <div class="ps-panel-body">
+              <h3>Financial Sentiment Engine</h3>
+              <p>Fine-tuned BERT model on 10M+ financial news articles, achieving 94% classification accuracy. Powers
+                live trading signals at a hedge fund — 35% increase in signal confidence versus baseline.</p>
+              <div class="ps-tags">
+                <span>BERT</span><span>HuggingFace</span><span>SageMaker</span><span>Python</span>
+              </div>
+              <div class="ps-panel-links">
+                <a href="#" class="ps-link-primary">Case Study ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ps-panel" data-panel="3">
+            <div class="ps-panel-bg p4"></div>
+            <div class="ps-panel-body">
+              <h3>AI Art Style Transfer Studio</h3>
+              <p>Stable Diffusion fine-tuned with custom LoRA adapters trained on curated artist styles. Gradio web
+                interface lets creators apply styles instantly — deployed on AWS with auto-scaling GPU pods.</p>
+              <div class="ps-tags">
+                <span>Stable Diffusion</span><span>LoRA</span><span>Gradio</span><span>AWS</span>
+              </div>
+              <div class="ps-panel-links">
+                <a href="#" class="ps-link-primary">View Live ↗</a>
+                <a href="#" class="ps-link-ghost">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ps-panel" data-panel="4">
+            <div class="ps-panel-bg p5"></div>
+            <div class="ps-panel-body">
+              <h3>AutoML Pipeline Platform</h3>
+              <p>End-to-end MLOps system: automated data ingestion, feature engineering, hyperparameter tuning with
+                Optuna, experiment tracking via MLflow, and one-click Kubernetes deployment with Terraform.</p>
+              <div class="ps-tags">
+                <span>MLflow</span><span>Airflow</span><span>Kubernetes</span><span>Terraform</span>
+              </div>
+              <div class="ps-panel-links">
+                <a href="#" class="ps-link-primary">Case Study ↗</a>
+                <a href="#" class="ps-link-ghost">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ░░░░░░░░░░ STACK ░░░░░░░░░░ -->
+    <section class="stack-section" id="stack">
+      <div class="stack-header">
+        <span class="stack-label">Technology Stack</span>
+        <h2>Tools I <em>actually</em> use.</h2>
+      </div>
+
+      <div class="stack-columns">
+        <div class="stack-col reveal">
+          <div class="stack-col-title">AI / ML</div>
+          <div class="stack-items">
+            <div class="stack-item"><span class="stack-name">PyTorch</span>
+              <div class="stack-bar" data-p="95">
+                <div></div>
+              </div>
+            </div>
+            <div class="stack-item"><span class="stack-name">TensorFlow</span>
+              <div class="stack-bar" data-p="90">
+                <div></div>
+              </div>
+            </div>
+            <div class="stack-item"><span class="stack-name">HuggingFace</span>
+              <div class="stack-bar" data-p="92">
+                <div></div>
+              </div>
+            </div>
+            <div class="stack-item"><span class="stack-name">LangChain</span>
+              <div class="stack-bar" data-p="88">
+                <div></div>
+              </div>
+            </div>
+            <div class="stack-item"><span class="stack-name">scikit-learn</span>
+              <div class="stack-bar" data-p="96">
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-col reveal">
+          <div class="stack-col-title">Languages</div>
+          <div class="stack-items">
+            <div class="stack-item"><span class="stack-name">Python</span>
+              <div class="stack-bar" data-p="98">
+                <div></div>
+              </div>
+            </div>
+            <div class="stack-item"><span class="stack-name">SQL</span>
+              <div class="stack-bar" data-p="88">
+                <div></div>
+              </div>
+            </div>
+            <div class="stack-item"><span class="stack-name">JavaScript</span>
+              <div class="stack-bar" data-p="80">
+                <div></div>
+              </div>
+            </div>
+            <div class="stack-item"><span class="stack-name">C++</span>
+              <div class="stack-bar" data-p="70">
+                <div></div>
+              </div>
+            </div>
+            <div class="stack-item"><span class="stack-name">Bash</span>
+              <div class="stack-bar" data-p="82">
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-col reveal">
+          <div class="stack-col-title">Infra & Tools</div>
+          <div class="stack-items">
+            <div class="stack-item"><span class="stack-name">AWS SageMaker</span>
+              <div class="stack-bar" data-p="90">
+                <div></div>
+              </div>
+            </div>
+            <div class="stack-item"><span class="stack-name">Docker / K8s</span>
+              <div class="stack-bar" data-p="85">
+                <div></div>
+              </div>
+            </div>
+            <div class="stack-item"><span class="stack-name">MLflow</span>
+              <div class="stack-bar" data-p="88">
+                <div></div>
+              </div>
+            </div>
+            <div class="stack-item"><span class="stack-name">FastAPI</span>
+              <div class="stack-bar" data-p="92">
+                <div></div>
+              </div>
+            </div>
+            <div class="stack-item"><span class="stack-name">Apache Spark</span>
+              <div class="stack-bar" data-p="78">
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░░░░░░░░ EXPERIENCE - HORIZONTAL ░░░░░░░░░░ -->
+    <section class="timeline-section" id="experience">
+      <div class="timeline-header-row">
+        <span class="tl-label">Experience</span>
+        <h2>Where I've<br /><em>made impact.</em></h2>
+      </div>
+
+      <div class="exp-track-wrap">
+        <div class="exp-track" id="exp-track">
+
+          <div class="exp-card tilt-card">
+            <div class="exp-year">2022 – Now</div>
+            <div class="exp-body">
+              <h3>Senior AI Engineer</h3>
+              <span class="exp-company">OpenAI Partners</span>
+              <p>Lead 6-person team building LLM products. RAG pipelines for 500K+ users, 60% latency reduction via
+                quantization.</p>
+              <div class="exp-skills"><span>GPT-4</span><span>RAG</span><span>LangChain</span></div>
+            </div>
+          </div>
+
+          <div class="exp-card tilt-card">
+            <div class="exp-year">2020 – 2022</div>
+            <div class="exp-body">
+              <h3>ML Engineer</h3>
+              <span class="exp-company">Google DeepMind</span>
+              <p>Productionized RL agents on TPU clusters. Processed petabytes of training data. Co-authored 2 NeurIPS
+                papers.</p>
+              <div class="exp-skills"><span>RL</span><span>JAX</span><span>TPU</span></div>
+            </div>
+          </div>
+
+          <div class="exp-card tilt-card">
+            <div class="exp-year">2019 – 2020</div>
+            <div class="exp-body">
+              <h3>Data Scientist</h3>
+              <span class="exp-company">Stripe</span>
+              <p>Fraud detection models cutting chargebacks by 35%. Real-time scoring system handling 1M+ transactions
+                per day.</p>
+              <div class="exp-skills"><span>XGBoost</span><span>Spark</span><span>Kafka</span></div>
+            </div>
+          </div>
+
+          <div class="exp-card tilt-card">
+            <div class="exp-year">2018 – 2019</div>
+            <div class="exp-body">
+              <h3>AI Research Intern</h3>
+              <span class="exp-company">Stanford AI Lab</span>
+              <p>Researched novel attention mechanisms for vision-language models and benchmarked SOTA approaches.</p>
+              <div class="exp-skills"><span>Vision</span><span>NLP</span><span>PyTorch</span></div>
+            </div>
+          </div>
+
+          <div class="exp-track-spacer"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░░░░░░░░ SPECIALIZATION ░░░░░░░░░░ -->
+    <section class="spec-section" id="specialization">
+      <div class="spec-inner">
+        <div class="spec-header reveal">
+          <span class="spec-label">Specialization</span>
+          <h2>What I'm <em>expert at.</em></h2>
+        </div>
+        <div class="spec-grid">
+          <div class="spec-card reveal tilt-card">
+            <div class="spec-icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" fill="currentColor" opacity=".12"/><path d="M14 34l10-20 10 20M17 28h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Large Language Models</h3>
+            <p>Fine-tuning, prompt engineering, RAG pipelines, and production deployment of LLMs including GPT-4, LLaMA, Mistral, and custom models.</p>
+            <ul class="spec-tags"><li>GPT-4</li><li>LLaMA</li><li>RAG</li><li>LangChain</li></ul>
+          </div>
+          <div class="spec-card reveal tilt-card">
+            <div class="spec-icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" fill="currentColor" opacity=".12"/><circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2.5"/><path d="M24 8v4M24 36v4M8 24h4M36 24h4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Computer Vision</h3>
+            <p>Object detection, segmentation, real-time inference at the edge. Specializing in custom YOLO, DETR, and diffusion-based vision systems.</p>
+            <ul class="spec-tags"><li>YOLOv8</li><li>OpenCV</li><li>ONNX</li><li>TensorRT</li></ul>
+          </div>
+          <div class="spec-card reveal tilt-card">
+            <div class="spec-icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" fill="currentColor" opacity=".12"/><path d="M12 36V20l12-8 12 8v16" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><rect x="19" y="28" width="10" height="8" rx="1" stroke="currentColor" stroke-width="2.5"/></svg>
+            </div>
+            <h3>MLOps & Infrastructure</h3>
+            <p>End-to-end ML pipelines, experiment tracking, automated retraining, and one-click deployment on Kubernetes & cloud platforms.</p>
+            <ul class="spec-tags"><li>MLflow</li><li>Kubeflow</li><li>Terraform</li><li>AWS</li></ul>
+          </div>
+          <div class="spec-card reveal tilt-card">
+            <div class="spec-icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" fill="currentColor" opacity=".12"/><path d="M16 32c0-4.4 3.6-8 8-8s8 3.6 8 8M24 24V16M18 19l6-6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Generative AI &amp; Multimodal</h3>
+            <p>Text-to-image, video synthesis, multimodal agents. Stable Diffusion, LoRA fine-tuning, and CLIP-based retrieval at scale.</p>
+            <ul class="spec-tags"><li>Stable Diffusion</li><li>LoRA</li><li>CLIP</li><li>Imagen</li></ul>
+          </div>
+          <div class="spec-card reveal tilt-card">
+            <div class="spec-icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" fill="currentColor" opacity=".12"/><path d="M24 12a12 12 0 0 1 0 24M24 12a12 12 0 0 0 0 24M24 12v24M12 24h24" stroke="currentColor" stroke-width="2.5"/></svg>
+            </div>
+            <h3>NLP &amp; Conversational AI</h3>
+            <p>Sentiment analysis, entity extraction, summarization, and dialogue systems using BERT, T5, and custom transformer architectures.</p>
+            <ul class="spec-tags"><li>BERT</li><li>T5</li><li>spaCy</li><li>Transformers</li></ul>
+          </div>
+          <div class="spec-card reveal tilt-card">
+            <div class="spec-icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" fill="currentColor" opacity=".12"/><path d="M24 14v10l6 6M10 24a14 14 0 1 0 28 0 14 14 0 0 0-28 0" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Real-Time AI Systems</h3>
+            <p>Low-latency AI inference for production use cases — edge deployment, model quantization, TensorRT optimization, and streaming pipelines.</p>
+            <ul class="spec-tags"><li>TensorRT</li><li>ONNX</li><li>Quant</li><li>Edge AI</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░░░░░░░░ CERTIFICATIONS ░░░░░░░░░░ -->
+    <section class="cert-section" id="certifications">
+      <div class="cert-inner">
+        <div class="cert-header-row reveal">
+          <div>
+            <span class="cert-label">Certifications</span>
+            <h2>Validated <em>expertise.</em></h2>
+          </div>
+          <p class="cert-subtitle">Credentials from leading industry organisations, validating hands-on skills in AI, ML, and cloud platforms.</p>
+        </div>
+
+        <div class="cert-layout">
+          <!-- Left: numbered list -->
+          <div class="cert-list" id="cert-list">
+            <button class="cert-list-item active" data-idx="0">
+              <span class="cli-num">01</span>
+              <span class="cli-text">
+                <strong>Professional ML Engineer</strong>
+                <em>Google Cloud · 2024</em>
+              </span>
+              <span class="cli-arrow">→</span>
+            </button>
+            <button class="cert-list-item" data-idx="1">
+              <span class="cli-num">02</span>
+              <span class="cli-text">
+                <strong>AWS ML Specialty</strong>
+                <em>Amazon Web Services · 2023</em>
+              </span>
+              <span class="cli-arrow">→</span>
+            </button>
+            <button class="cert-list-item" data-idx="2">
+              <span class="cli-num">03</span>
+              <span class="cli-text">
+                <strong>Deep Learning Specialization</strong>
+                <em>DeepLearning.AI · 2022</em>
+              </span>
+              <span class="cli-arrow">→</span>
+            </button>
+            <button class="cert-list-item" data-idx="3">
+              <span class="cli-num">04</span>
+              <span class="cli-text">
+                <strong>NLP with Transformers</strong>
+                <em>Hugging Face · 2023</em>
+              </span>
+              <span class="cli-arrow">→</span>
+            </button>
+            <button class="cert-list-item" data-idx="4">
+              <span class="cli-num">05</span>
+              <span class="cli-text">
+                <strong>PyTorch Deep Learning</strong>
+                <em>PyTorch Foundation · 2024</em>
+              </span>
+              <span class="cli-arrow">→</span>
+            </button>
+          </div>
+
+          <!-- Right: detail card -->
+          <div class="cert-panel" id="cert-panel">
+            <div class="cert-card active" data-cert="0">
+              <div class="cert-card-top">
+                <div class="cert-issuer-logo"><svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#4285F4"/><path d="M20 10l3 9H33l-8 6 3 9-8-6-8 6 3-9-8-6h10z" fill="white"/></svg></div>
+                <div class="cert-meta"><span class="cert-issuer">Google Cloud</span><span class="cert-date">2024</span></div>
+                <span class="cert-badge">Verified</span>
+              </div>
+              <h3 class="cert-title">Professional Machine Learning Engineer</h3>
+              <p class="cert-desc">Demonstrates the ability to design, build, and productionize ML models using Google Cloud — Vertex AI, BigQuery ML, and TFX pipelines serving at scale.</p>
+              <div class="cert-skills"><span>Vertex AI</span><span>TFX</span><span>BigQuery ML</span><span>MLOps</span></div>
+              <div class="cert-progress-bar"><div class="cert-progress-fill" style="width:20%"></div></div>
+              <span class="cert-counter">1 / 5</span>
+            </div>
+            <div class="cert-card" data-cert="1">
+              <div class="cert-card-top">
+                <div class="cert-issuer-logo"><svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#FF9900"/><path d="M8 20c0-6.6 5.4-12 12-12s12 5.4 12 12-5.4 12-12 12S8 26.6 8 20z" fill="white" opacity=".25"/><path d="M12 24l8-8 8 8" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+                <div class="cert-meta"><span class="cert-issuer">Amazon Web Services</span><span class="cert-date">2023</span></div>
+                <span class="cert-badge">Verified</span>
+              </div>
+              <h3 class="cert-title">AWS Certified Machine Learning – Specialty</h3>
+              <p class="cert-desc">Validates expertise in building, training, tuning, and deploying ML models using the AWS cloud — SageMaker, data engineering, and model monitoring.</p>
+              <div class="cert-skills"><span>SageMaker</span><span>S3</span><span>Kinesis</span><span>CloudWatch</span></div>
+              <div class="cert-progress-bar"><div class="cert-progress-fill" style="width:40%"></div></div>
+              <span class="cert-counter">2 / 5</span>
+            </div>
+            <div class="cert-card" data-cert="2">
+              <div class="cert-card-top">
+                <div class="cert-issuer-logo"><svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#0A66C2"/><path d="M13 28V18M13 14v-2M20 28v-5c0-2.8 1.5-5 4-5s4 2.2 4 5v5M27 28v-5" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+                <div class="cert-meta"><span class="cert-issuer">DeepLearning.AI</span><span class="cert-date">2022</span></div>
+                <span class="cert-badge">Verified</span>
+              </div>
+              <h3 class="cert-title">Deep Learning Specialization</h3>
+              <p class="cert-desc">5-course program covering neural networks, hyperparameter tuning, CNNs, sequence models, and structuring production ML projects — by Andrew Ng.</p>
+              <div class="cert-skills"><span>TensorFlow</span><span>CNN</span><span>LSTM</span><span>Transformers</span></div>
+              <div class="cert-progress-bar"><div class="cert-progress-fill" style="width:60%"></div></div>
+              <span class="cert-counter">3 / 5</span>
+            </div>
+            <div class="cert-card" data-cert="3">
+              <div class="cert-card-top">
+                <div class="cert-issuer-logo"><svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#7B2DBF"/><circle cx="20" cy="20" r="9" stroke="white" stroke-width="2.5"/><path d="M16 20l3 3 5-6" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <div class="cert-meta"><span class="cert-issuer">Hugging Face</span><span class="cert-date">2023</span></div>
+                <span class="cert-badge">Verified</span>
+              </div>
+              <h3 class="cert-title">Natural Language Processing with Transformers</h3>
+              <p class="cert-desc">Hands-on covering BERT, GPT, T5, and modern NLP pipelines using the Hugging Face ecosystem — from fine-tuning to deploying in production.</p>
+              <div class="cert-skills"><span>BERT</span><span>GPT</span><span>T5</span><span>HuggingFace</span></div>
+              <div class="cert-progress-bar"><div class="cert-progress-fill" style="width:80%"></div></div>
+              <span class="cert-counter">4 / 5</span>
+            </div>
+            <div class="cert-card" data-cert="4">
+              <div class="cert-card-top">
+                <div class="cert-issuer-logo"><svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#EE4C2C"/><path d="M14 28V12l6 8 6-8v16" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <div class="cert-meta"><span class="cert-issuer">PyTorch Foundation</span><span class="cert-date">2024</span></div>
+                <span class="cert-badge">Verified</span>
+              </div>
+              <h3 class="cert-title">PyTorch for Deep Learning &amp; Neural Networks</h3>
+              <p class="cert-desc">End-to-end mastery of PyTorch — tensors, autograd, custom architectures, distributed training, and model export with TorchScript and ONNX.</p>
+              <div class="cert-skills"><span>PyTorch</span><span>Autograd</span><span>ONNX</span><span>TorchScript</span></div>
+              <div class="cert-progress-bar"><div class="cert-progress-fill" style="width:100%"></div></div>
+              <span class="cert-counter">5 / 5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ░░░░░░░░░░ CONTACT ░░░░░░░░░░ -->
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <span class="contact-label">Contact</span>
+          <h2 class="contact-headline">
+            Got a hard<br />problem?<br /><em>Let's solve it.</em>
+          </h2>
+          <div class="contact-links">
+            <a href="mailto:alex@alexchen.ai" class="contact-link-item">
+              <span class="cli-label">Email</span>
+              <span class="cli-val">taseermehboob@gmail.com ↗</span>
+            </a>
+            <a href="#" class="contact-link-item">
+              <span class="cli-label">LinkedIn</span>
+              <span class="cli-val">linkedin.com/in/taseer-mehboob ↗</span>
+            </a>
+            <a href="#" class="contact-link-item">
+              <span class="cli-label">GitHub</span>
+              <span class="cli-val">github.com/Taseer09 ↗</span>
+            </a>
+            <a href="#" class="contact-link-item">
+              <span class="cli-label">Twitter</span>
+              <span class="cli-val">@Taseermehboob09 ↗</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form">
+            <div class="cf-group">
+              <input type="text" id="cf-name" placeholder="Your name" required />
+            </div>
+            <div class="cf-group">
+              <input type="email" id="cf-email" placeholder="Email address" required />
+            </div>
+            <div class="cf-group">
+              <textarea id="cf-msg" rows="5" placeholder="What are you building?" required></textarea>
+            </div>
+            <button type="submit" class="cf-submit" id="cf-submit">
+              <span id="cf-btn-text">Send message →</span>
+            </button>
+            <div class="cf-success" id="cf-success">✓ Message sent — I'll respond within 24 hours.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">TM.</span>
+      <span class="footer-copy">© 2026 Taseer Mehboob. All rights reserved.</span>
+      <a href="#home" class="footer-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="btt" id="btt" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
