@@ -1811,8 +1811,15 @@ button {
     padding-right: 24px;
   }
 
+  .hero-headline {
+    flex: 0 1 auto;
+    margin-bottom: 24px;
+    padding-bottom: 32px;
+  }
+
   .hero-bottom {
     grid-template-columns: 1fr;
+    padding-top: 0;
   }
 
   .hero-cta-group {
